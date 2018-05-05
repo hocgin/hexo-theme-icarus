@@ -16,7 +16,7 @@
             <% } %>
             <section id="main"><%- body %></section>
             <% if (theme.customize.sidebar) { %>
-                <%- partial('common/sidebar', null, {cache: !config.relative_link}) %>
+                <%- partial('common/sidebar', null, false) %>
             <% } %>
         </div>
         <%- partial('common/footer', null, {cache: !config.relative_link}) %>
