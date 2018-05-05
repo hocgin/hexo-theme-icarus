@@ -11,14 +11,14 @@ nav:
     older: '下一篇'
     newer: '上一篇'
 widget:
-    recents: '最新文章'
+    recents: '近期文章'
     archives: '归档'
     categories: '分类'
-    links: '链接'
+    links: '友情连接'
     tags: '标签'
     tag_cloud: '标签云'
 article:
-    more: '查看更多'
+    more: '围观'
     comments: '评论'
     share: '分享到'
     catalogue: '文章目录'
