@@ -13,13 +13,6 @@
                 <%- partial('post/category') %>
             </div>
             <%- partial('post/title', {class_name: 'article-title'}) %>
-            <!--<% if (post.layout != 'page') { %>-->
-            <!--<div class="article-meta">-->
-            <!--<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>-->
-            <!--<%- partial('post/category') %>-->
-            <!--<%- partial('post/tag') %>-->
-            <!--</div>-->
-            <!--<% } %>-->
         </header>
         <% } %>
         <%- partial('post/gallery') %>
@@ -37,7 +30,9 @@
             </div>
             <% } %>
             <%- post.content %>
+            <%- partial('post/tag') %>
             <% } %>
+
         </div>
         <footer class="article-footer">
             <%- partial('share/index', {post: post}) %>
