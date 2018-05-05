@@ -92,17 +92,45 @@ div.outer {
 .article-meta {
   padding: 3px;
 }
+
 #footer {
   font-family "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
-  a.me{
+  a.me {
     color: #565A5E;
   }
 }
-a.social {
-  font-family "Fira Code"
-  font-size: 1.4em;
+
+.article-title {
+  font-weight: 700;
+  font-family: "Microsoft YaHei", Lato, sans-serif
 }
 
-//* {
-//  cursor: url('https://hocg.in/mouse.png'), auto;
-//}
+#main-nav a {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+// toc
+.post-toc {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .nav-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.8;
+    padding: 0;
+
+    &:hover {
+      & > a {
+        color: color-link;
+      }
+      & > .nav-child {
+        display: block;
+      }
+    }
+  }
+  .nav-child {
+    display: none;
+  }
+}
+
